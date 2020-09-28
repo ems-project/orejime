@@ -5,6 +5,7 @@ export default class AppItem extends React.Component {
     render(){
         const {checked, onToggle, name, title, description, t, ns} = this.props
         const required = this.props.required || false
+        const optional = (required) ? false: true
         const optOut = this.props.optOut || false
         const purposes = this.props.purposes || []
         const onChange = (e) => {
@@ -29,6 +30,14 @@ export default class AppItem extends React.Component {
                 {t(['app', 'required', 'title'])}
             </span>
             : ''
+        const optionalText = optional
+          ? <span
+            className={ns('AppItem-optional')}
+            title={t(['app', 'optional', 'description'])}
+          >
+                {t(['app', 'optional', 'title'])}
+            </span>
+          : ''
 
         const purposesEl = purposes.length > 0
             ? <p className={ns('AppItem-purposes')}>
@@ -51,7 +60,7 @@ export default class AppItem extends React.Component {
                 className={ns('AppItem-label')}
                 {...(required ? {tabIndex: "0"} : {})}
             >
-                <span className={ns('AppItem-title')}>{title}</span>{requiredText}{optOutText}
+                <span className={ns('AppItem-title')}>{title}</span>{requiredText}{optOutText}{optionalText}
                 <span className={ns(`AppItem-switch ${required ? 'AppItem-switch--disabled' : ''}`)}>
                     <div className={ns('AppItem-slider')}></div>
                     <div aria-hidden="true" className={ns('AppItem-switchLabel')}>{t(switchLabel)}</div>

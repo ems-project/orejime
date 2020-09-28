@@ -49,6 +49,7 @@ export const defaultConfig = {
     parseCookie: JSON.parse.bind(JSON),
     privacyPolicy: '',
     gdprCompliant: true,
+    essentialsOnly: false,
     default: true,
     mustConsent: false,
     mustNotice: false,
