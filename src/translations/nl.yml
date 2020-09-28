@@ -6,6 +6,10 @@ consentModal:
     name: privacybeleid
     text: >
       Lees ons privacybeleid voor meer informatie {privacyPolicy}.
+  privacyPolicyNotice:
+    name: privacybeleid
+    text: >
+      Lees ons privacybeleid voor meer informatie {privacyPolicy}.
 consentNotice:
   changeDescription: Er waren wijzigingen sinds uw laatste bezoek, werk uw voorkeuren bij.
   description: >
@@ -27,6 +31,9 @@ app:
   required:
     title: (altijd verplicht)
     description: Deze applicatie is altijd vereist
+  optional:
+    title: (optionele)
+    description: Deze applicatie is optioneel
   purposes: Doeleinden
   purpose: Doeleinde
 poweredBy: Aangedreven door Orejime

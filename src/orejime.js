@@ -48,6 +48,8 @@ export const defaultConfig = {
     stringifyCookie: JSON.stringify.bind(JSON),
     parseCookie: JSON.parse.bind(JSON),
     privacyPolicy: '',
+    gdprCompliant: true,
+    essentialsOnly: false,
     default: true,
     mustConsent: false,
     mustNotice: false,
@@ -57,7 +59,7 @@ export const defaultConfig = {
     translations: {},
     apps: {},
     debug: false
-}
+};
 
 export function init(conf) {
     const config = Object.assign({}, defaultConfig, conf)

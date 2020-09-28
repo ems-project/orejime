@@ -6,6 +6,10 @@ consentModal:
     name: politique de confidentialité
     text: >
       Pour en savoir plus, merci de lire notre {privacyPolicy}.
+  privacyPolicyNotice:
+    name: politique de confidentialité
+    text: >
+      Pour en savoir plus, merci de lire notre {privacyPolicy}.
 consentNotice:
   changeDescription: Des modifications ont eu lieu depuis votre dernière visite, merci de mettre à jour votre consentement.
   description: >
@@ -27,6 +31,9 @@ app:
   required:
     title: (toujours requis)
     description: Cette application est toujours requise
+  optional:
+    title: (optionnels)
+    description: Cette application est optionnelle
   purposes: Utilisations
   purpose: Utilisation
 poweredBy: Propulsé par Orejime

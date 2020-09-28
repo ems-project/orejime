@@ -6,6 +6,10 @@ consentModal:
     name: Datenschutzerklärung
     text: >
       Bitte lesen Sie unsere {privacyPolicy} um weitere Details zu erfahren.
+  privacyPolicyNotice:
+    name: Datenschutzerklärung
+    text: >
+      Bitte lesen Sie unsere {privacyPolicy} um weitere Details zu erfahren.
 consentNotice:
   changeDescription: Es gab Änderungen seit Ihrem letzten Besuch, bitte aktualisieren Sie Ihre Auswahl.
   description: >
@@ -20,6 +24,9 @@ app:
   required:
     title: (immer notwendig)
     description: Diese Anwendung wird immer benötigt
+  optional:
+    title: (optionale)
+    description: Diese Anwendung ist optional
   purposes: Zwecke
   purpose: Zweck
 poweredBy: Realisiert mit Orejime

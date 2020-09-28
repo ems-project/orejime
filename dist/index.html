@@ -44,6 +44,8 @@
             window.orejimeConfig = {
                 appElement: "#app",
                 privacyPolicy: "#privacyPolicy",
+                gdprCompliant: true,
+                default: false,
                 translations: {
                     en: {
                         consentModal: {
@@ -85,7 +87,7 @@
                         name: "disabled-by-default",
                         title: "Something disabled by default",
                         purposes: ["ads"],
-                        default: false
+                        required: true
                     },
                     {
                         name: "always-on",

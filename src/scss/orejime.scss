@@ -295,7 +295,8 @@ $orejime-theme-color-light: #aaa !default;
 }
 
 .orejime-AppItem-optOut,
-.orejime-AppItem-required {
+.orejime-AppItem-required,
+.orejime-AppItem-optional {
     padding-left: 0.2em;
     font-size: 0.8em;
     color: $orejime-theme-color-light;
